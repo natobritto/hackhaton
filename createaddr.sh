@@ -1,0 +1,1 @@
+elements-cli getnewaddress "" "bech32"

@@ -2,10 +2,10 @@
 set -euo pipefail
 
 # --- YOU SET THESE ---
-DEST="tex1p9ytl7f6qy274nu3gzaprqd9vh77xpt4eh05m4sz3qxxltxhepy7q4keasr"
-UTXO="cab983e0fedefdb081384f5ea449d51399befc4f98753fe45c900765e2855737"
+DEST="tex1p60uu467qvfxee08h8vjns822w0jt66j3nsdcssjyyzhzze266p3qj77trr"
+UTXO="3b44f181e87d36fdccdcec77ad607af0cb0077d6bb4098b3f997f26232c03ac2"
 ASSET_ID="144c654344aa716d6f3abcc1ca90e5641e4e2a7f633bc09fe3baf64585819a49"  # L-BTC asset id
-VOUT=0
+VOUT=1
 RECIPIENT_AMT=0.00009000                # exact amount the other person should receive
 FEE_SAT_VB=0.5                            # your target feerate in sat/vB (e.g., 1, 2, 3, 5, 10)
 

@@ -1,29 +1,27 @@
-
-you need to 
-
-do sighash
-create the witness file
-simc can take in with witness file
-finalize transaction
--  first do: hal simplicity pset finalize
--        0 program witness -> attaches the program an dwitness
-            returns pset + updated values final script witness
-- odkcer exec elementsd eleentscli finalizesbt
-
-
-
-
+renato@renato:~/Desktop/bitcoin/hackhaton$ 
 {
-  "secret": "086ea345f6062f7093680f254538ac81e69590a8003aea66d2d00e42c8c0e2e8",
-  "x_only": "b3a56fa369e94e3698202256936fdb710b001caba3c35ba118212e75287431f6",
-  "parity": 0
+  "bitcoin": 0.00140751
 }
-Private Key: 086ea345f6062f7093680f254538ac81e69590a8003aea66d2d00e42c8c0e2e8
-Public Key (x-only): b3a56fa369e94e3698202256936fdb710b001caba3c35ba118212e75287431f6
+
+renato@renato:~/Desktop/bitcoin/hackhaton$ ./create_p2pk.sh 
+{
+  "secret": "8a5416a1d6b193429998dd1e03ef3d3dd4e248591ebed2ae989f7345b846d643",
+  "x_only": "3c16234ebef67296f71d4714a5dd360e91e875c413215c437d9cfdfaf79f0fa8",
+  "parity": 1
+}
+Private Key: 8a5416a1d6b193429998dd1e03ef3d3dd4e248591ebed2ae989f7345b846d643
+Public Key (x-only): 3c16234ebef67296f71d4714a5dd360e91e875c413215c437d9cfdfaf79f0fa8
 Program:
-4gTabOlb6Np6U42mCAiVpNv23ELAByro8NboRghLnUodDH2BCBQngIQKHQKEGHHGwOFSDBVsYCEig/CAQDgIHBQOFg==
+4gTaTwWI06+9nKW9x1HFKXdNg6R6HXEEyFcQ32c/fr3nw+oBCBQngIQKHQKEGHHGwOFSDBVsYCEig/CAQDgIHBQOFg==
 === Contract Values ===
-CMR:     bb92922aaf0ab986da96fc9e44135c19c91bd0709e9c850ef83311a9eed0146d
-Address: tex1pghf7gquucx09r9stldqdqf7c0z07zv5462g6wjurasvhkyzyxf7q8eszfp
-Program: e204da6ce95be8da7a538da6080895a4dbf6dc42c0072ae8f0...
+CMR:     1cda223facd6b39b4af69e375e4646b0bd27f4829a231d1b9f5b2feacb9f2532
+Address: tex1p60uu467qvfxee08h8vjns822w0jt66j3nsdcssjyyzhzze266p3qj77trr
+Program: e204da4f0588d3afbd9ca5bdc751c529774d83a47a1d7104c8...
 Saved variables to .env
+
+renato@renato:~/Desktop/bitcoin/hackhaton$ elements-cli getbalance
+{
+  "bitcoin": 0.00131616
+}
+
+

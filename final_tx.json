@@ -2,7 +2,7 @@
   "version": 2,
   "locktime": {"Blocks": 0},
   "inputs": [{
-    "txid": "8a4b99a546b0b395bf1b1929340ce348b81e6af19290ad97a2dc458f746290b3",
+    "txid": "b8abeab04a28816318e8f4b1a75824e1bbc5cf333711d1a87d0ab33ea4430cff",
     "vout": 0,
     "script_sig": {"hex": ""},
     "sequence": 0,
@@ -10,16 +10,16 @@
     "has_issuance": false,
     "witness": {
       "script_witness": [
-        "85a6a6276b77e9d793ca3b9111ac28191560f5481b6a9927e267a3edb3af6a6af746baa3648c5c2b8c443b62d9ffb38f936a31bbc931137e08dab9a216466d86",
-        "e204da46ac9b0db404f5879682e39006802098239c95f50d38c1b4aa670805cb4ca811c108142780840a1d02841871c6c0e1520c156c60212283f0804038081c140e16",
-        "510021bef129c6f81f15e0b112c50dad5b44c6387bfc792324e25fc645c35c0c",
+        "a70fe7329da2c9381d57804e2f577feb4ce852abd01e92eddbc113f127cc10a15c7ea1c6fd24e580f6ef55d3adf05ffa46b2770611fee5c12601dfbfb840916f",
+        "e204da4f0588d3afbd9ca5bdc751c529774d83a47a1d7104c85710df673f7ebde7c3ea0108142780840a1d02841871c6c0e1520c156c60212283f0804038081c140e16",
+        "1cda223facd6b39b4af69e375e4646b0bd27f4829a231d1b9f5b2feacb9f2532",
         "bef5919fa64ce45f8306849072b26c1bfdd2937e6b81774796ff372bd1eb5362d2"
       ]
     }
   }],
   "outputs": [
     {
-      "script_pub_key": {"address": "tex1q24p43v5eg6rvv076yu3xk62hm990d4hq7xrssc"},
+      "script_pub_key": {"address": "tex1qgckmsy0fjqut96cz6j222fa4qux8ejx75acf26"},
       "asset": {"type": "explicit", "asset": "144c654344aa716d6f3abcc1ca90e5641e4e2a7f633bc09fe3baf64585819a49"},
       "value": {"type": "explicit", "value": 8000},
       "nonce": {"type": "null"}

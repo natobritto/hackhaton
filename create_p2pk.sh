@@ -1,5 +1,8 @@
-# Generate a new keypair using hal-simplicity
-KEYPAIR=$(hal-simplicity simplicity keypair generate)
+# hal=./mylocalhal
+hal="hal-simplicity simplicity"
+
+# Generate a new keypair using $hal
+KEYPAIR=$($hal keypair generate)
 echo "$KEYPAIR" | jq '.'
 
 TEST_PRIVKEY=$(echo "$KEYPAIR" | jq -r '.secret')
@@ -19,17 +22,19 @@ EOF
 
 ./simc p2pk_contract.simf
 
-PROGRAM_B64=$(simc p2pk_contract.simf 2>&1 | awk 'NR==2')
-CMR=$(hal-simplicity simplicity simplicity info "$PROGRAM_B64" 2>&1 | jq -r '.cmr')
-ADDRESS=$(hal-simplicity simplicity simplicity info "$PROGRAM_B64" 2>&1 | jq -r '.liquid_testnet_address_unconf')
+PROGRAM_B64=$(./simc p2pk_contract.simf 2>&1 | awk 'NR==2')
+CMR=$($hal simplicity info "$PROGRAM_B64" 2>&1 | jq -r '.cmr')
+ADDRESS=$($hal simplicity info "$PROGRAM_B64" 2>&1 | jq -r '.liquid_testnet_address_unconf')
+
 PROGRAM_HEX=$(echo -n "$PROGRAM_B64" | base64 -d | xxd -p | tr -d '\n')
+
+
 CONTROL_BLOCK="bef5919fa64ce45f8306849072b26c1bfdd2937e6b81774796ff372bd1eb5362d2"
 
 echo "=== Contract Values ==="
 echo "CMR:     $CMR"
 echo "Address: $ADDRESS"
 echo "Program: ${PROGRAM_HEX:0:50}..."
-
 
 # Save important variables to a local .env (permissions restricted)
 cat > .env <<EOF
