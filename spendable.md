@@ -25,3 +25,5 @@ renato@renato:~/Desktop/bitcoin/hackhaton$ elements-cli getbalance
 }
 
 
+
+a
