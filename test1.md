@@ -1,0 +1,24 @@
+# cretae wallets w1 and w2
+elements-cli createwallet w1
+elements-cli createwallet w2
+
+# get money in my w1
+elements-cli -rpcwallet=w1 -chain=liquidtestnet getnewaddress "" "bech32" 
+tex1q96p2l63flc3ezd0gwgp9dpz6aer7sp4l2l50v3
+
+fund https://liquidtestnet.com/faucet
+Sent 100000 sats to address tex1q96p2l63flc3ezd0gwgp9dpz6aer7sp4l2l50v3 with transaction e80a05aea34e11cae89cd8be3c55eb8fae83ef370bd6ac52e0469516825cd6c9.
+
+# create contract anyone can spend
+tex1pjj4anx9xlvl05v3g9vwtcez5xsdvseprv53vnhv4f2deymtnd5rs8prcsy
+
+# send w1 money to it
+./transaction.sh
+3fdd49c3d2bb483b4688375a1f2ecff7bc16dddbb6f9c6f6479b478832d51e15
+
+# spend it via UI to my w2
+recv: tex1q4f4r4294hvesx3f2hn2hwq8x4jft3gycg0eys8
+0200000001013825644fbf6d38f4144f2270612a9c25e81e43e45ca4809c89130422bce6e8020100000000000000000201499a818545f6bae39fc03b637f2a4e1e64e590cac1bc3a6f6d71aa4443654c1401000000000000000100160014aa6a3aa8b5bb3303452abcd57700e6ac92b8a09801499a818545f6bae39fc03b637f2a4e1e64e590cac1bc3a6f6d71aa4443654c140100000000000003e700000000000000000400012420c40a10263f7436b4160acbef1c36fba4be4d95df181a968afeab5eac247adff721bef5919fa64ce45f8306849072b26c1bfdd2937e6b81774796ff372bd1eb5362d20000000000
+
+# return to fauled
+addr: tlq1qq2g07nju42l0nlx0erqa3wsel2l8prnq96rlnhml262mcj7pe8w6ndvvyg237japt83z24m8gu4v3yfhaqvrqxydadc9scsmw

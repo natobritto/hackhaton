@@ -1,0 +1,1 @@
+elements-cli decoderawtransaction $(elements-cli getrawtransaction $1)

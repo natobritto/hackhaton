@@ -1,0 +1,34 @@
+{
+  "version": 2,
+  "locktime": {"Blocks": 0},
+  "inputs": [{
+    "txid": "1bb2fe9a9d0eb237d524d663dfe8f945e3f9ee58670b5e717a7c2ce5740ef90f",
+    "vout": 0,
+    "script_sig": {"hex": ""},
+    "sequence": 0,
+    "is_pegin": false,
+    "has_issuance": false,
+    "witness": {
+      "script_witness": [
+        "",
+        "24",
+        "c40a10263f7436b4160acbef1c36fba4be4d95df181a968afeab5eac247adff7",
+        "bef5919fa64ce45f8306849072b26c1bfdd2937e6b81774796ff372bd1eb5362d2"
+      ]
+    }
+  }],
+  "outputs": [
+    {
+      "script_pub_key": {"address": "tex1q24p43v5eg6rvv076yu3xk62hm990d4hq7xrssc"},
+      "asset": {"type": "explicit", "asset": "144c654344aa716d6f3abcc1ca90e5641e4e2a7f633bc09fe3baf64585819a49"},
+      "value": {"type": "explicit", "value": 8000},
+      "nonce": {"type": "null"}
+    },
+    {
+      "script_pub_key": {"hex": ""},
+      "asset": {"type": "explicit", "asset": "144c654344aa716d6f3abcc1ca90e5641e4e2a7f633bc09fe3baf64585819a49"},
+      "value": {"type": "explicit", "value": 1000},
+      "nonce": {"type": "null"}
+    }
+  ]
+}
